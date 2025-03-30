@@ -1,0 +1,245 @@
+/* Reseto o css */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* A configuração do fundo, da borda e tamanho do header */
+header  {
+    background: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    backdrop-filter: blur(50px);
+    border: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    min-width: 320;
+    max-width: 800;
+    z-index: 1000;
+}
+
+/* A configuração da navegação do site que é: borda, centralização, tamanho, largura, blur e etc */
+nav  {
+    display: flex;
+    justify-content: center;
+    border: 1px solid  white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: fixed;
+    z-index: 1000;
+    top: 100px;
+    left: 405px;
+    height: 35px;
+    width: 700px;
+    background: none;
+    backdrop-filter: blur(50px);
+    min-width: 320px;
+    max-width: 800px;
+}
+
+/* Logo do site */
+.imagem  {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -80px;
+    left: -15px;
+    width: 100%;
+}
+
+
+/* Sobre o site (propósito, para que serve e etc) */
+.sobre  {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    top: 35px;
+    right: -210px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Barra de pesquisa do site */
+.Pesquisa  {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -215px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Configuração do display da pesquisa e animação */
+#pesquisa  {
+    padding: 10px;
+    border-radius: 15px;
+    height: 10px;
+    width: 85px;
+    transition: width 0.5s ease, height 0.5s ease;
+    transition-duration: 1.5s;
+}
+
+/* Animação da pesquisa */
+#pesquisa:hover  {
+    height: 35px;
+    width: 350px;
+}
+
+/* Generos de filmes */
+.genero  {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    top: 35px;
+    right: -125px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+
+/* Conteúdo do Nav */
+.container  {
+    color: red;
+    font-size: 25px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Links */
+a  {
+    color: red;
+}
+
+/* Posicionamento do Nav */
+.caixa  {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Título do lançamento */
+.titulo {
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 185px;
+    right: 590px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Posição do nomes dos cartazes */
+.cartaz  {
+    text-align: center;
+}
+
+.cartaz img  {
+    cursor: pointer;
+    height: 180px;
+    transition: height 0.5s ease;
+}
+
+.cartaz img:hover  {
+    height: 225px;
+}
+
+.cartaz h2  {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+
+#Cartazes  {
+    background-image: url(../img/a_realistic_cinema_room_view_from_behind_showing_the_large_white_screen_in_front_empty_plush_seats__kxvhgpc6xqenuu34482f_0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 740px;
+    position: relative;
+    padding-top: 135px;
+}
+
+.cartazes-container  {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    width: 100%;
+}
+
+
+#generos  {
+    color: red;
+    background-color: black;
+    position: absolute;
+    top: 740px;
+    width: 1520px;
+    height: 150px;
+}
+
+.titlegen  {
+    display: flex;
+    justify-content: center;
+}
+
+.icones-container  {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icones p  {
+    position: relative;
+    right: -10px;
+    font-size: 18px;
+}
+
+.icones img  {
+    cursor: pointer;
+    border-radius: 100px;
+    transition: height 0.5s ease;
+}
+
+.icones img:hover  {
+    height: 100px;
+}
+
+#acao  {
+    position: absolute;
+    right: 983px;
+}
+
+#comedia  {
+    position: absolute;
+    right: 850px;
+}
+
+#drama  {
+    position: absolute;
+    right: 618px;
+}
+
+#mais  {
+    position: absolute;
+    right: 503px;
+}
+
+#animacao  {
+    position: absolute;
+    right: 723px;
+}
