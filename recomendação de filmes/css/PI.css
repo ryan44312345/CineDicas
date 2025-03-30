@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1520px;
 }
 
 
@@ -63,7 +64,7 @@ nav  {
     top: 35px;
     right: -210px;
     min-width: 320px;
-    max-width: 800;
+    max-width: 100%;
 }
 
 /* Barra de pesquisa do site */
@@ -113,8 +114,136 @@ nav  {
 }
 
 /* Links */
-a  {
+nav a  {
     color: red;
+}
+
+.titulo a {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    display: inline-block;
+}
+
+.titulo a::after  {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease-in-out;
+}
+
+.titulo a:hover::after  {
+    width: 100%;
+}
+
+.sub1 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub1 a::after  {
+    content: '';
+    position: absolute;
+    left: 80px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub1 a:hover::after  {
+    width: 65px;
+}
+
+.sub2 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub2 a::after  {
+    content: '';
+    position: absolute;
+    left: 165px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub2 a:hover::after  {
+    width: 65px;
+}
+
+.sub3 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub3 a::after  {
+    content: '';
+    position: absolute;
+    left: 250px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub3 a:hover::after  {
+    width: 95px;
+}
+
+.sub4 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub4 a::after  {
+    content: '';
+    position: absolute;
+    left: 370px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub4 a:hover::after  {
+    width: 135px;
+}
+
+.sub5 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub5 a::after  {
+    content: '';
+    position: absolute;
+    left: 530px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub5 a:hover::after  {
+    width: 90px;
 }
 
 /* Posicionamento do Nav */
@@ -148,11 +277,16 @@ a  {
 .cartaz img  {
     cursor: pointer;
     height: 180px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     transition: height 0.5s ease;
 }
 
 .cartaz img:hover  {
     height: 225px;
+}
+
+#botao  {
+    border: 1px solid transparent;
 }
 
 .cartaz h2  {
@@ -167,6 +301,7 @@ a  {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    width: 100%;
     height: 740px;
     position: relative;
     padding-top: 135px;
@@ -186,9 +321,10 @@ a  {
 #generos  {
     color: red;
     background-color: black;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(29, 25, 25));
     position: absolute;
     top: 740px;
-    width: 1520px;
+    width: 100%;
     height: 150px;
 }
 
