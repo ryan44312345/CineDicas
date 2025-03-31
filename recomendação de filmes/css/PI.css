@@ -321,7 +321,6 @@ nav a  {
 #generos  {
     color: red;
     background-color: black;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(29, 25, 25));
     position: absolute;
     top: 740px;
     width: 100%;
@@ -378,4 +377,76 @@ nav a  {
 #animacao  {
     position: absolute;
     right: 723px;
+}
+
+#Duna  {
+    position: absolute;
+    top: 890px;
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.65), rgba(93, 80, 12, 0.65)), url(../img/ChatGPT\ Image\ 30\ de\ mar.\ de\ 2025\,\ 21_35_58.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.dunti  {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    background-image: linear-gradient(to bottom, black, black, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.duna-container  {
+    position: relative;
+    top: 80px;
+}
+
+.cartaz2  {
+    text-align: center;
+}
+
+.cartaz2 img  {
+    align-items: center;
+    cursor: pointer;
+    height: 180px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+}
+
+.cartaz2 img:hover  {
+    height: 225px;
+}
+
+#botao2  {
+    border: 1px solid transparent;
+}
+
+.cartaz2 h2  {
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.cartaz2 h3  {
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.cartaz2 p  {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.resumo  {
+    position: relative;
+    right: 680px;
 }
