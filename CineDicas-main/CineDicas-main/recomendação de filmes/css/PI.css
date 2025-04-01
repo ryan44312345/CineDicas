@@ -1,0 +1,418 @@
+/* Reseto o css */
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html  {
+    scroll-behavior: smooth;
+}
+
+/* A configuração do fundo, da borda e tamanho do header */
+header  {
+    background: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    backdrop-filter: blur(50px);
+    border: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    z-index: 1000;
+}
+
+/* A configuração da navegação do site que é: borda, centralização, tamanho, largura, blur e etc */
+nav  {
+    position: fixed;
+    z-index: 1000;
+    top: 100px;
+    height: 40px;
+    width: 100dvw;
+    margin: 0 auto;
+    background: none;
+}
+
+/* Logo do site */
+.imagem  {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -80px;
+    left: -15px;
+    width: 100%;
+}
+
+
+/* Sobre o site (propósito, para que serve e etc) */
+.sobre  {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    top: 35px;
+    right: -210px;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+/* Barra de pesquisa do site */
+.Pesquisa  {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -215px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Configuração do display da pesquisa e animação */
+#pesquisa  {
+    padding: 10px;
+    border-radius: 15px;
+    height: 10px;
+    width: 90px;
+    transition: width 0.5s ease, height 0.5s ease;
+    transition-duration: 1.5s;
+}
+
+/* Animação da pesquisa */
+#pesquisa:hover  {
+    height: 35px;
+    width: 350px;
+}
+
+/* Generos de filmes */
+.genero  {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    top: 35px;
+    right: -125px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+
+/* Conteúdo do Nav */
+.container  {
+    justify-self: center;
+    backdrop-filter: blur(50px);
+    padding: 5px;
+    border: 1px solid  white;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: red;
+    font-size: 25px;
+    width: 600px;
+}
+
+/* Links */
+nav a  {
+    color: red;
+}
+
+.titulo a {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+}
+
+.titulo a::after  {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease-in-out;
+}
+
+.titulo a:hover::after  {
+    width: 100%;
+}
+
+.sub1 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub1 a::after  {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub1 a:hover::after  {
+    width: 65px;
+}
+
+.sub2 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub2 a::after  {
+    content: '';
+    position: absolute;
+    left: 117px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub2 a:hover::after  {
+    width: 65px;
+}
+
+.sub3 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub3 a::after  {
+    content: '';
+    position: absolute;
+    left: 200px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub3 a:hover::after  {
+    width: 95px;
+}
+
+.sub4 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub4 a::after  {
+    content: '';
+    position: absolute;
+    left: 320px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub4 a:hover::after  {
+    width: 135px;
+}
+
+.sub5 a {
+    color: red;
+    text-decoration: red;
+    display: inline-block;
+}
+
+.sub5 a::after  {
+    content: '';
+    position: absolute;
+    left: 480px;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s ease-in-out;
+}
+
+.sub5 a:hover::after  {
+    width: 90px;
+}
+
+/* Posicionamento do Nav */
+.caixa  {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    min-width: 320px;
+    max-width: 800;
+}
+
+/* Título do lançamento */
+.titulo {
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+/* Posição do nomes dos cartazes */
+.cartaz  {
+    text-align: center;
+}
+
+.cartaz img  {
+    border-radius: 10px;
+    cursor: pointer;
+    height: 180px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+}
+
+.cartaz img:hover  {
+    height: 225px;
+}
+
+#botao  {
+    border: 1px solid transparent;
+}
+
+.cartaz h2  {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+
+#Cartazes  {
+    background-image: url(../img/a_realistic_cinema_room_view_from_behind_showing_the_large_white_screen_in_front_empty_plush_seats__kxvhgpc6xqenuu34482f_0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: 740px;
+    position: relative;
+    padding-top: 135px;
+}
+
+.cartazes-container  {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    top: 290px;
+    left: 0px;
+    width: 100%;
+}
+
+
+#generos  {
+    color: red;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+.titlegen  {
+    display: flex;
+    justify-content: center;
+}
+
+.icones-container  {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icones p  {
+    text-align: center;
+    font-size: 18px;
+}
+
+.icones img  {
+    cursor: pointer;
+    border-radius: 100px;
+    transition: height 0.5s ease;
+}
+
+.icones img:hover  {
+    height: 100px;
+}
+
+
+
+#Duna  {
+    position: absolute;
+    top: 890px;
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.65), rgba(93, 80, 12, 0.65)), url(../img/ChatGPT\ Image\ 30\ de\ mar.\ de\ 2025\,\ 21_35_58.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.dunti  {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    background-image: linear-gradient(to bottom, black, black, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.duna-container  {
+    position: relative;
+    top: 80px;
+}
+
+.cartaz2  {
+    text-align: center;
+}
+
+.cartaz2 img  {
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    height: 180px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: height 0.5s ease;
+}
+
+.cartaz2 img:hover  {
+    height: 225px;
+}
+
+#botao2  {
+    border: 1px solid transparent;
+}
+
+.cartaz2 h2  {
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.cartaz2 h3  {
+    margin-right: 20%;
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+}
+
+.cartaz2 p  {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.resumo  {
+    position: relative;
+    right: 680px;
+}
